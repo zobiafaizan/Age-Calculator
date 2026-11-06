@@ -1,0 +1,205 @@
+
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #f5e6ff,
+        #ffe4f1
+    );
+}
+
+/* Main Calculator Box */
+.container {
+    width: 100%;
+    max-width: 430px;
+    padding: 35px 30px;
+
+    background: white;
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 40px
+    rgba(140, 70, 150, 0.15);
+}
+
+/* Icon */
+.icon {
+    font-size: 38px;
+    color: #c05acb;
+    margin-bottom: 12px;
+}
+
+/* Heading */
+h1 {
+    color: #743b91;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+/* Subtitle */
+.subtitle {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Date Label */
+label {
+    display: block;
+    text-align: left;
+    color: #743b91;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Date Input */
+input {
+    width: 100%;
+    padding: 14px;
+
+    border: 2px solid #ead8f0;
+    border-radius: 12px;
+
+    font-size: 15px;
+    outline: none;
+
+    margin-bottom: 20px;
+}
+
+/* Input Focus */
+input:focus {
+    border-color: #bd67cc;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 12px;
+}
+
+button {
+    padding: 13px 10px;
+    border: none;
+    border-radius: 12px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+/* Calculate Button */
+#calculate {
+    flex: 2;
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #a64ac0,
+        #e66fa9
+    );
+}
+
+/* Reset Button */
+#reset {
+    flex: 1;
+    color: #874b9b;
+    background: #f4e8f7;
+}
+
+/* Result Box */
+.result {
+    background: #fcf5ff;
+    border: 1px solid #f0d9f5;
+
+    border-radius: 16px;
+    padding: 22px 12px;
+
+    margin-top: 25px;
+
+    color: #9560a5;
+    font-size: 14px;
+}
+
+/* Result Heading */
+.result h2 {
+    color: #87459e;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Age Boxes */
+.age-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.age-box {
+    background: white;
+    border-radius: 12px;
+    padding: 12px 8px;
+    flex: 1;
+
+    box-shadow: 0 3px 10px
+    rgba(140, 70, 150, 0.08);
+}
+
+.age-box span {
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    color: #bd59bd;
+}
+
+.age-box small {
+    color: #999;
+}
+
+/* Error Message */
+.message {
+    color: #e05d78;
+    font-size: 13px;
+    margin-top: 12px;
+    min-height: 18px;
+}
+
+/* Footer */
+footer {
+    margin-top: 25px;
+    color: #bbb;
+    font-size: 12px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 380px) {
+
+    .container {
+        padding: 25px 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
